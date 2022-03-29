@@ -1,9 +1,21 @@
-def fizzbuzz(n: int) -> str:
-    if n % 15 == 0:
+def fizzbuzz(n: int, fizz=3, buzz=5) -> str:
+    """Fizz Buzz function.
+
+    >>> fizzbuzz(3)
+    'Fizz'
+    >>> fizzbuzz(5)
+    'Buzz'
+    >>> fizzbuzz(15)
+    'FizzBuzz'
+    >>> fizzbuzz(2)
+    '2'
+    """
+
+    if n % fizz == 0 and n % buzz == 0:
         return "FizzBuzz"
-    elif n % 3 == 0:
+    elif n % fizz == 0:
         return "Fizz"
-    elif n % 5 == 0:
+    elif n % buzz == 0:
         return "Buzz"
     else:
         return str(n)
