@@ -1,4 +1,4 @@
-.PHONY: unittest doctest install uninstall clean
+.PHONY: pytest install uninstall clean
 
 unittest:
 	python3 -m unittest discover -v
