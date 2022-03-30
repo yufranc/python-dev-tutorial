@@ -8,7 +8,7 @@ setup(
     url='https://github.com/yufranc/python-dev-tutorial',
     author_email='yunafran@gmail.com',
     license='MIT',
-    install_requires=[],
+    install_requires=["pytest"],
     packages=find_packages(exclude=["tests"]),
     entry_points={
         'console_scripts': 'fizzbuzz-cli = fizzbuzz.fizzbuzz:main'
