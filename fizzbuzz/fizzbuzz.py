@@ -21,6 +21,7 @@ def fizzbuzz(n: int, fizz: int=3, buzz: int=5) -> str:
         return "Buzz"
     else:
         return str(n)
+
 @click.command()
 @click.argument("nums", nargs=-1, type=int)
 @click.option("--fizz", type=int, default=3, help="Number corresponds to Fizz.")
